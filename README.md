@@ -9,6 +9,4 @@ At CS Crew we were wondering if different numbers were prime. `1337` is not prim
 
 However `1337` is prime in base 12. yay! :smile:
 
-Unfortunately the number, "OPTIMUS" will never be prime.  This is because in any base, "S" will be 28, which isn't prime.
-
 ![](optimus.png)
