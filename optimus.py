@@ -1,5 +1,5 @@
 # CHANGE HERE
-string = 'jacob'
+string = 'optimus'
 
 
 def is_prime(n):
@@ -10,7 +10,6 @@ def is_prime(n):
             return False
 
     return True
-
 
 numbers = {
     '0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7,
@@ -30,8 +29,10 @@ for l in string:
 for base in range(highestbase, 10000):
     total = 0
     for i, l in enumerate(string):
-        total += numbers[l] * base ** i
+        total += numbers[l] * (base ** i)
 
     if is_prime(total):
         print(string[::-1], 'is prime in base', base, 'equal to', total)
-        break
+        #break
+    elif base % 100 == 0:
+        print('not up to', base)
